@@ -1,0 +1,35 @@
+<%= flash[:alert] %>
+<h1>Nuevo Carro</h1>
+<div class="form-horizontal">
+<%= simple_form_for @car do |f| %>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.input :propietario, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.input :modelo, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.input :placa, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.input :color, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.button :submit, class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
+</div>
